@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Expense Tracker</h1>
+
+    <!-- Time Range Filter -->
+    <label for="timeRange">View By:</label>
+    <select id="timeRange">
+      <option value="all">All</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+    </select>
+
+    <!-- Table for displaying expenses -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody id="expenseTable">
+        <!-- Rows populated by JavaScript -->
+      </tbody>
+    </table>
+
+    <!-- Download Button (Visible only for premium users) -->
+    <button id="downloadButton" disabled>Download Expenses</button>
+  </div>
+
+  <script src="js/data.js" type="module"></script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Expense Tracker</h1>
+
+   
+    <label for="timeRange">View By:</label>
+    <select id="timeRange">
+      <option value="all">All</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+    </select>
+
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody id="expenseTable">
+ 
+      </tbody>
+    </table>
+
+
+    <button id="downloadButton" disabled>Download Expenses</button>
+  </div>
+
+
+  <script src="js/data.js" type="module"></script>
+  <script src="js/utils.js" type="module"></script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html> -->
